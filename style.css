@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    transition: all 0.3s ease;
+}
+
+.change-bg{
+    background-color: #354259;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+.master{
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 200px;
+    padding: 4rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.box:hover{
+    transform: scale(1.2) translate(-50px);
+    box-shadow: 0 3px 0 #dbdbdd;
+}
+
+.color-1{
+    background-color: green;
+}
+
+.color-1:hover ~ .change-bg{
+    background-color: green;
+}
+
+.color-2{
+    background-color: red;
+}
+
+.color-2:hover ~ .change-bg{
+    background-color: red;
+}
+
+.color-3{
+    background-color: blue;
+}
+
+.color-3:hover ~ .change-bg{
+    background-color: blue;
+}
+
+.color-4{
+    background-color: pink;
+}
+
+.color-4:hover ~ .change-bg{
+    background-color: pink;
+}
+
+.color-5{
+    background-color: yellow;
+}
+
+.color-5:hover ~ .change-bg{
+    background-color: yellow;
+}
+
+.color-6{
+    background-color: orange;
+}
+
+.color-6:hover ~ .change-bg{
+    background-color: orange;
+}
